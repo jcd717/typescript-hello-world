@@ -1,0 +1,6 @@
+tsconfig.tsbuildinfo
+
+static/js/*
+ts2js/*
+
+!/**/.gitkeep

@@ -1,0 +1,16 @@
+{
+    "watch": {
+      "build": {
+        "patterns": ["ts"],
+        "extensions": "ts",
+        "runOnChangeOnly": true,
+        "delay": 3000
+      }
+      
+    },
+
+    "scripts": {
+      "build": "tsc && java -jar closure-compiler-v20220301.jar --js 'ts2js/**.js' --js_output_file static/js/app.js --language_in ECMASCRIPT_2015 --language_out ECMASCRIPT_2015 --compilation_level ADVANCED",
+      "watch": "npm-watch"
+    }
+  }
